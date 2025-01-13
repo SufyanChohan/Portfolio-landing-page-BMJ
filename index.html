@@ -6,18 +6,36 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <style>
-       
+       .navbar{
+        padding: 0px;
+       }
+       .mqe{
+        font-weight: 700;
+    line-height: initial;
+    height: 100px;
+    font-size: 100px;
+    top: 40px;
+    font-family: sans-serif;
+    color: #3d3d385d;
+    
+       }
+       .mqediv{
+        background-color: rgb(23, 218, 186);
+       }
+       .video-container video::-webkit-media-controls {
+      display: none !important;
+    }
     </style>
 </head>
 <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-body ">
         <div class="container-fluid " style="background-color: rgb(23, 218, 186); height: 100px;">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand " href="#"><img width="100px" src="./logo-removebg-preview.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
               <a class="nav-link" href="#">About</a>
@@ -33,10 +51,12 @@
             <div style="width: 50%;"><img  style="margin-left: 80px;" width="500px" height="100%" src="./hero_section_image-removebg-preview.png" alt=""></div>
             <div style="width: 50%;"> <h2 style="color: white; margin-top: 100px;">Unleash Possibilities:<br> Your Journey Begins Here</h2>
                 <p style="color: white";>This complements the main heading with a focus on quality and sophistication, aligning with  <br>an Apple laptop's premium appeal. Let me know if you'd like to refine it further based on your website's theme!</p>
-                <button style="border: none; width: 200px; height: 40px; border-radius: 10px;">Contact Us</button>
+                <button style="border: none; width: 200px; height: 40px; border-radius: 10px;"><b>Contact Us</b></button>
             </div>
         </div>
         <!-- Hero section end -->
+         <!-- third section start -->
+          <!-- first div -->
          <div style="width: 100%; padding-top: 40px; display: flex;">
             <div style="width: 50%;"><img height="300px" width="100%" src="./img1.jpeg" alt=""></div>
             <div style="width: 50%;">
@@ -44,23 +64,131 @@
                 <p style="padding-left: 20px;">Our team is the heart of everything we do. A blend of creativity, expertise, and <br> dedication drives our mission forward, ensuring we deliver exceptional solutions <br> every step of the way. With diverse talents and a shared vision, we collaborate <br> seamlessly to overcome challenges and bring innovative ideas to life. <br> Together, we’re building a future defined by excellence and impact.</p>
             </div>
          </div>
-        <!-- <div style="text-align:center;margin-top: 20px;">
-            <h1>Our Team</h1>
-            <p>This subheading conveys professionalism and highlights your team's impact. </p>
-        </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+         <!-- first div end -->
+          <!-- second div start -->
+          <div style="width: 100%; padding-top: 40px; display: flex;">
+            <div style="width: 50%;" class="col-md-6 ">
+                <h1 style="padding-left: 20px;padding-top: 70px;">Our Dynamic Team</h1>
+                <p style="padding-left: 20px;">Our team is the heart of everything we do. A blend of creativity, expertise, and <br> dedication drives our mission forward, ensuring we deliver exceptional solutions <br> every step of the way. With diverse talents and a shared vision, we collaborate <br> seamlessly to overcome challenges and bring innovative ideas to life. <br> Together, we’re building a future defined by excellence and impact.</p>
+            </div>
+            <div class="video-container col-md-6" style="width: 50%;">
+              <video autoplay muted loop width="100%" height="300px" controls>
+              <source src="./3253079-uhd_3840_2160_25fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            </div>
+          </div>
+          <!-- marquee div -->
+          <div class="mqediv">
+            <marquee class="mqe" behavior="alternate" direction="right">Start Work With SC Tech Start Work With SC Tech Start Work With SC Tech Start Work With SC Tech </marquee>
+           <!-- marquee end -->
+            <div class="container my-5">
+              <div class="row">
+                <!-- Contact Form -->
+                <div class="col-md-6 mb-4">
+                  <div class="p-4 border rounded">
+                    <h4>Contact Us</h4>
+                    <form>
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary mt-3">Send</button>
+                    </form>
+                  </div>
+                </div>
+                
+                <!-- Map -->
+                <div class="col-md-6 mb-4">
+                  <div class="p-4 border rounded">
+                    <h4>Our Location</h4>
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345091836!2d144.95373531531588!3d-37.81627974202198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5777b6dbf3c6c0b!2sMelbourne%20CBD!5e0!3m2!1sen!2sau!4v1611780796623!5m2!1sen!2sau" 
+                      width="100%" 
+                      height="250" 
+                      style="border:0;" 
+                      allowfullscreen="" 
+                      loading="lazy">
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- team introduction -->
+             <!-- card one -->
+            <div class="container my-5">
+              <div class="row">
+                <!-- Image Div -->
+                <div class="col-md-6 image-div">
+                  <img width="100%" height="500px" src="./Faraz-scaled.jpg" alt="Placeholder Image">
+                </div>
+          
+                <!-- Text Div -->
+                <div class="col-md-6 align-items-center">
+                  <h2 class="mt-5">Our CEO</h2>
+                  <p>Our CEO is a visionary leader with a strong commitment to driving innovation and growth within the company. With over 15 years of experience in the industry, they have successfully navigated complex challenges and consistently delivered exceptional results. Known for their strategic mindset and collaborative approach, our CEO inspires the team to reach new heights and fosters a culture of creativity and excellence. Their leadership not only focuses on achieving business goals but also on building long-term relationships with clients, partners, and employees, ensuring the continued success of the organization.</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="container my-5">
+              <div class="row">
+               <!-- Text Div -->
+                <div class="col-md-6 align-items-center">
+                  <h2 class="mt-5">Our Accountant</h2>
+                  <p>Our Accountant is a highly skilled professional responsible for managing the financial health of the company. With a strong background in accounting and finance, they ensure that all financial records are accurate, up-to-date, and compliant with regulatory standards. Our Accountant handles budgeting, forecasting, and reporting, providing valuable insights to help guide business decisions. Their attention to detail, analytical mindset, and commitment to financial integrity play a key role in maintaining the company’s financial stability and supporting its long-term growth.
+                  </p>
+                </div>
+                 <!-- Image Div -->
+                 <div class="col-md-6 image-div">
+                  <img width="100%" height="500px" src="./Ammad-300x300.jpg" alt="Placeholder Image">
+                </div>
+              </div>
+            </div>
+             <!-- card 3-->
+             <div class="container my-5">
+              <div class="row">
+                 <!-- Image Div -->
+                 <div class="col-md-6 image-div">
+                  <img width="100%" height="500px" src="./Umer2-300x300.jpg" alt="Placeholder Image">
+                </div>
+               <!-- Text Div -->
+                <div class="col-md-6 align-items-center">
+                  <h2 class="mt-5">Our Full Stack Dev </h2>
+                  <p>Our Web Developer is a talented professional dedicated to building and maintaining our website and online presence. With expertise in various programming languages and frameworks, they create user-friendly, responsive, and visually appealing websites that enhance the overall user experience. They work closely with the design and content teams to ensure that all web elements align with our brand and business goals. Through continuous learning and staying up-to-date with the latest web technologies, our Web Developer plays a critical role in ensuring our website functions smoothly and effectively meets the needs of our users.
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+             <!-- card 4 -->
+             <div class="container my-5">
+              <div class="row">
+               <!-- Text Div -->
+                <div class="col-md-6 align-items-center">
+                  <h2 class="mt-5">Our Jr.Web Dev</h2>
+                  <p>Our Junior Web Developer is an emerging talent with a passion for coding and web technologies. They are responsible for assisting in the development, testing, and maintenance of websites and web applications. With a solid foundation in HTML, CSS, JavaScript, and other web technologies, they work under the guidance of senior developers to build clean, functional, and responsive web pages. Their enthusiasm for learning and growing in the field is evident in their ability to adapt quickly to new challenges and contribute to projects effectively, ensuring our web presence is both innovative and user-friendly.
+                  </p>
+                </div>
+                 <!-- Image Div -->
+                 <div class="col-md-6 image-div">
+                  <img width="100%" height="500px" src="./Sufyan-Chohan-1-300x300.jpg" alt="Placeholder Image">
+                </div>
+              </div>
+            </div>
+          
+            <!-- Bootstrap JS and dependencies -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          </body>
+          </html>
