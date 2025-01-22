@@ -23,6 +23,17 @@
         color: rgb(223, 221, 221);
         font-weight: 500;
        }
+       .firstbtn{
+        background-color: white;
+        border: 2px solid white;
+       }
+       .firstbtn:hover{
+          transform: scale(1.1);
+          transition: 1.1s;
+          border: 2px solid white;
+          color: white;
+          background-color: #095c51;
+       }
        .hero{
         background-color: #024d43;
         height: 550px;
@@ -44,10 +55,11 @@
        .video-container video::-webkit-media-controls {
       display: none !important;
     }
-    
-   
-  
-        .lastp > a:hover{
+    .subbtn:hover{
+      transform: scale(1.1);
+      transition: 1.1s;
+    }
+    .lastp > a:hover{
           color: white;
         }
     </style>
@@ -100,7 +112,7 @@
                     This complements the main heading with a focus on quality and sophistication, aligning with <br>
                     an Apple laptop's premium appeal. Let me know if you'd like to refine it further based on your website's theme!
                 </p>
-                <button class="btn btn-light mt-2 px-4 py-2 rounded mb-4"><b>Contact Us</b></button>
+                <button class="btn mt-2 px-4 py-2 rounded mb-4 firstbtn"><b>Contact Us</b></button>
             </div>
         </div>
     </div>
@@ -133,13 +145,9 @@
       <div class="row align-items-center">
           <!-- Text Section -->
           <div class="col-12 col-md-6">
-              <h1>Our Dynamic Team</h1>
+              <h1>The Minds Behind</h1>
               <p>
-                  Our team is the heart of everything we do. A blend of creativity, expertise, and 
-                  dedication drives our mission forward, ensuring we deliver exceptional solutions 
-                  every step of the way. With diverse talents and a shared vision, we collaborate 
-                  seamlessly to overcome challenges and bring innovative ideas to life. 
-                  Together, we’re building a future defined by excellence and impact.
+                Behind every great achievement is a team driven by passion and purpose. Our collective of forward-thinkers and problem-solvers brings together diverse skills and experiences to deliver exceptional outcomes. United by a shared vision, we embrace challenges as opportunities, pushing boundaries to innovate and inspire. Together, we’re shaping a future where possibilities are limitless.
               </p>
           </div>
           <!-- Video Section -->
@@ -177,7 +185,9 @@
                           <label for="message" class="form-label">Message</label>
                           <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
                       </div>
-                      <button type="submit" class="btn btn-primary mt-3">Send</button>
+                      <div class="">
+                      <button type="submit" class="btn btn-success mt-3 w-25 subbtn"> <strong> Send</strong></button>
+                      </div>
                   </form>
               </div>
           </div>
