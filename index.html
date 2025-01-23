@@ -6,67 +6,8 @@
     <title>Landing page</title>
     <link rel="icon" type="image/png" href="./Assets/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      .main{
-        display: none;
-
-      }
-       .navbar{
-        padding: 0px;
-        background-color: #024d43;
-        height: 100px;
-        position: sticky;
-        z-index: 1;
-        top: 0;
-       }
-       .nav-link{
-        color: rgb(223, 221, 221);
-        font-weight: 500;
-       }
-       .firstbtn{
-        background-color: white;
-        border: 2px solid white;
-       }
-       .firstbtn:hover{
-          transform: scale(1.1);
-          transition: 1.1s;
-          border: 2px solid white;
-          color: white;
-          background-color: #095c51;
-       }
-       .hero{
-        background-color: #024d43;
-        height: 550px;
-       }
-       .mqe{
-        font-weight: 700;
-    line-height: initial;
-    height: 100px;
-    font-size: 100px;
-    top: 40px;
-    font-family: sans-serif;
-    color:rgb(255, 255, 255);
-    
-       }
-       .mqediv{
-        background-color: #024d43;
-        padding: 20px;
-       }
-       .video-container video::-webkit-media-controls {
-      display: none !important;
-    }
-    .subbtn:hover{
-      transform: scale(1.1);
-      transition: 1.1s;
-    }
-    .lastp > a{
-      color: white;
-    }
-        .lastlogo{
-          width: 100px;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="style.css">
+   </head>
 <body>
   <h1 class="main">Landing Page</h1>
   <p class="main">our Landing is fully responsive</p>
@@ -81,7 +22,7 @@
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link home" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
@@ -142,17 +83,29 @@
           </div>
       </div>
   </div>
+   <!-- second Section -->
+   <div class="container my-4 pt-4">
+    <div class="row align-items-center">
+       
+        <!-- Text Section -->
+        <div class="col-12 col-md-6">
+            <h1>The Power of Collaboration</h1>
+            <p>
+              Collaboration is the cornerstone of everything we do. By combining diverse expertise and perspectives, we generate innovative solutions that drive success. Our team’s synergy allows us to overcome challenges and celebrate achievements together, making every milestone a collective triumph
+            </p>
+        </div>
+         <!-- Image Section -->
+         <div class="col-12 col-md-6">
+          <img src="./Assets/power of collaboraiton.jpg" class="img-fluid imgpower" alt="Dynamic Team Image">
+      </div>
+    </div>
+</div>
 
-  <!-- Second Section -->
+
+  <!-- Thid section-->
   <div class="container my-4">
       <div class="row align-items-center">
-          <!-- Text Section -->
-          <div class="col-12 col-md-6">
-              <h1>The Minds Behind</h1>
-              <p>
-                Behind every great achievement is a team driven by passion and purpose. Our collective of forward-thinkers and problem-solvers brings together diverse skills and experiences to deliver exceptional outcomes. United by a shared vision, we embrace challenges as opportunities, pushing boundaries to innovate and inspire. Together, we’re shaping a future where possibilities are limitless.
-              </p>
-          </div>
+          
           <!-- Video Section -->
           <div class="col-12 col-md-6 video-container">
               <video autoplay muted loop class="w-100" controls>
@@ -160,6 +113,13 @@
                   Your browser does not support the video tag.
               </video>
           </div>
+          <!-- Text Section -->
+          <div class="col-12 col-md-6">
+            <h1>The Minds Behind</h1>
+            <p>
+              Behind every great achievement is a team driven by passion and purpose. Our collective of forward-thinkers and problem-solvers brings together diverse skills and experiences to deliver exceptional outcomes. United by a shared vision, we embrace challenges as opportunities, pushing boundaries to innovate and inspire. Together, we’re shaping a future where possibilities are limitless.
+            </p>
+        </div>
       </div>
   </div>
            <!-- Marquee Section -->
@@ -238,7 +198,7 @@
                       <!-- Card 2 -->
                       <div class="col-md-3">
                         <div class="card">
-                          <img class="teamimg" src="./Assets/ammad_resized_300x300.png" class="card-img-top" alt="Accountant Image">
+                          <img class="teamimg" src="./Assets/ammad_resized_new.png" class="card-img-top" alt="Accountant Image">
                           <div class="card-body">
                             <h5 class="card-title">Our Accountant</h5>
                             <p class="card-text">Our Accountant ensures the company's financial health through precise record-keeping...</p>
@@ -291,7 +251,7 @@
         </div>
         
         <!-- Contact Information -->
-        <div class=" col-md-3 mb-4 pt-4">
+        <div class=" col-md-3 mb-4 pt-4 add">
           <p class="lastp"><strong> ☏ </strong>Whatsapp:<a href="https://wa.me/923131071174" target="_blank"> Click Here </a><br> ✉️ Email: <a href="mailto:chohansufyan4@gmail.com" target="_blank">chohansufyan4@gmail.com</a><br> 🌐Address: Karachi,Pakistan </p>
           <p>© 2025 SC Tech. All Rights Reserved.</p>
         </div>
